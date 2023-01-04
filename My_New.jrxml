@@ -29,17 +29,6 @@
 	<variable name="actor" class="java.lang.Integer" calculation="Count"/>
 	<group name="Group1">
 		<groupExpression><![CDATA[$F{actor_id}]]></groupExpression>
-		<groupHeader>
-			<band height="20">
-				<textField>
-					<reportElement x="0" y="0" width="270" height="20" uuid="85afc278-663d-4c62-b82f-ef8469378369"/>
-					<textFieldExpression><![CDATA[$F{first_name}]]></textFieldExpression>
-				</textField>
-			</band>
-		</groupHeader>
-		<groupFooter>
-			<band height="50"/>
-		</groupFooter>
 	</group>
 	<background>
 		<band splitType="Stretch"/>
@@ -59,101 +48,15 @@
 	<columnHeader>
 		<band height="18" splitType="Stretch">
 			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="130" height="18" uuid="2fd78ade-beb4-4163-b90f-4facbd908388"/>
+				<reportElement stretchType="RelativeToTallestObject" x="150" y="0" width="140" height="18" uuid="13a81973-1e8a-4e81-a654-2cfbd8df750d"/>
 				<box padding="2">
 					<pen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Actor ID"]]></textFieldExpression>
-			</textField>
-			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="410" y="0" width="140" height="18" uuid="13a81973-1e8a-4e81-a654-2cfbd8df750d"/>
-				<box padding="2">
-					<pen lineWidth="0.5"/>
-				</box>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA["Last Update"]]></textFieldExpression>
-			</textField>
-			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="270" y="0" width="140" height="18" uuid="bae8c664-1cc9-4d35-acec-a039ce1bc4cd"/>
-				<box padding="2">
-					<pen lineWidth="0.5"/>
-				</box>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA["Last Name"]]></textFieldExpression>
-			</textField>
-			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="130" y="0" width="140" height="18" uuid="4c885fa2-c987-47a3-a071-8e0bf669c3f8"/>
-				<box padding="2">
-					<pen lineWidth="0.5"/>
-				</box>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA["First Name"]]></textFieldExpression>
+				<textFieldExpression><![CDATA["commiting and pushing"]]></textFieldExpression>
 			</textField>
 		</band>
 	</columnHeader>
-	<detail>
-		<band height="20" splitType="Stretch">
-			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="130" height="20" uuid="ca120d0a-172c-4773-8d82-96f93a7e567e"/>
-				<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="4">
-					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font size="10"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{actor_id}]]></textFieldExpression>
-			</textField>
-			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="130" y="0" width="140" height="20" uuid="2180cab7-785d-4657-bbf7-7a70516c43be"/>
-				<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="4">
-					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font size="10"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{first_name}]]></textFieldExpression>
-			</textField>
-			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="270" y="0" width="140" height="20" uuid="6df60a63-142e-4509-abb2-74bdd4a0fa52"/>
-				<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="4">
-					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font size="10"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{last_name}]]></textFieldExpression>
-			</textField>
-			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="410" y="0" width="140" height="20" uuid="b57bb601-de7a-48d2-8f9c-71eb38e04dba"/>
-				<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="4">
-					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font size="10"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{last_update}]]></textFieldExpression>
-			</textField>
-		</band>
-	</detail>
 </jasperReport>
