@@ -46,17 +46,6 @@
 		</band>
 	</title>
 	<columnHeader>
-		<band height="18" splitType="Stretch">
-			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="150" y="0" width="140" height="18" uuid="13a81973-1e8a-4e81-a654-2cfbd8df750d"/>
-				<box padding="2">
-					<pen lineWidth="0.5"/>
-				</box>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA["commiting and pushing"]]></textFieldExpression>
-			</textField>
-		</band>
+		<band height="18" splitType="Stretch"/>
 	</columnHeader>
 </jasperReport>
